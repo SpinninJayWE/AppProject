@@ -10,7 +10,7 @@ import {Header,Tabbar, TabItem} from 'mint-ui'
 
 Vue.component(Header.name,Header);
 
-  
+
 
 //导入App组件
 
