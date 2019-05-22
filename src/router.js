@@ -1,14 +1,22 @@
 import Vuerouter from "vue-router"
 
+//导入路由组件
+import Home from './components/tabbar/Home.vue'
+import membr from './components/tabbar/membr.vue'
+import search from './components/tabbar/search.vue'
+import shopcar from './components/tabbar/shopcar.vue'
 
-import login from './subcom/login.vue'
-import zhuce from './subcom/zhuce.vue'
 
 //3.创建路由对象
 var router = new Vuerouter({
-    routes:[
-        
-    ]
+    routes:[ //配置路由规则
+        {path:"/",redirect:'/home'},
+        {path:"/Home",component:Home},
+        {path:"/member",component:membr},
+        {path:"/search",component:search},
+        {path:"/shopcar",component:shopcar},
+    ],
+    linkActiveClass:'mui-active'  //覆盖默认的路由高亮类
 });
 
 //把路由对象暴露出去
