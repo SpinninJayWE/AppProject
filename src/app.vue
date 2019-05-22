@@ -50,7 +50,8 @@ export default {
 
 <style lang="css" scoped>
    .appcon{
-	   padding-top: 40px;
+	   margin-top: 40px;
+	   margin-bottom: 50px;
 	   overflow-x: hidden;
 
    }
