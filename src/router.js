@@ -5,6 +5,7 @@ import Home from './components/tabbar/Home.vue'
 import membr from './components/tabbar/membr.vue'
 import search from './components/tabbar/search.vue'
 import shopcar from './components/tabbar/shopcar.vue'
+import newsList from './components/news/newsList.vue'
 
 
 //3.创建路由对象
@@ -15,6 +16,7 @@ var router = new Vuerouter({
         {path:"/member",component:membr},
         {path:"/search",component:search},
         {path:"/shopcar",component:shopcar},
+        {path:"/home/newsList",component:newsList}
     ],
     linkActiveClass:'mui-active'  //覆盖默认的路由高亮类
 });
